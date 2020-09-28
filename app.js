@@ -41,7 +41,7 @@ app.use((error, req, res, next) => {
 	console.log('error.message', error.message);
 	console.log('error.statusCode', error.statusCode);
 
-	res.status(error.statusCode || 500).json(error.message || `Something Went Wrong: ${error.toString()}`);
+	res.status(error.statusCode || 500).json({error: error.message || `Something Went Wrong: ${error.toString()}`});
 });
 
 // DB Configs
