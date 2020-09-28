@@ -4,3 +4,25 @@
 Nodejs, ExpressJs, mongoose, jwt, express-validator, Cloudinary, multer
 
 ## Structure:
+
+    ├───Apis
+        ├───auth.js
+    ├───helpers
+        ├───cloudinary.js
+        ├───expiryDates.js
+        ├───pagination.js
+        ├───randomIds.js
+        ├───sendError.js
+    ├───images
+        ├───preventer.js
+    ├───middlewares
+        ├───checkValidation.js
+        ├───isAuth.js
+        ├───multerUploader.js
+    ├───models
+        ├───User.js
+    └───routes
+        ├───auth.js
+    ├───app.js
+    ├───.env
+
